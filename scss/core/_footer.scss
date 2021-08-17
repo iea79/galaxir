@@ -1,0 +1,78 @@
+/* Footer
+ ----------------------------------------------------------------------------- */
+.footer {
+	position: relative;
+	padding: 3em 0 1.9em;
+	background: url("img/footer-bg.jpg") 0 0 no-repeat;
+	background-size: cover;
+
+	&__content {
+		@extend .container_center;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+
+		@media (min-width: 768px) {
+			flex-direction: row;
+		}
+	}
+
+	&__top {
+		padding-bottom: 3.1em;
+	}
+
+	&__nav {
+		.menu {
+			@media (max-width: 767px) {
+				text-align: center;
+				margin: 2em 0;
+			}
+		}
+	}
+
+	&__soc {
+
+		@media (max-width: 767px) {
+			margin-bottom: 2em;
+		}
+	}
+
+	&__action {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		@media (min-width: 768px) {
+			flex-direction: row;
+			margin-left: 5.4em;
+
+			.fl-button {
+				font-size: 0.78em;
+				font-weight: 600;
+				padding: 1.1em 2.3em;
+			}
+
+		}
+	}
+
+	&__bottom {
+		.footer__content {
+			border-top: 1px solid rgba($color_withe, 0.2);
+			padding-top: 1.6em;
+			flex-direction: row;
+		}
+
+		a {
+			color: $color_withe;
+			opacity: 0.8;
+			font-size: 0.8em;
+
+			&:hover {
+				text-decoration-color: transparent;
+			}
+		}
+	}
+}
+
+.footer {}

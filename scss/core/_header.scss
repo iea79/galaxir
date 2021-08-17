@@ -1,0 +1,47 @@
+/* Header
+ ----------------------------------------------------------------------------- */
+.header {
+	padding: 0.9em 0 2em;
+	background-color: #1f8ed6;
+
+	@media (min-width: 768px) {
+		padding: 1.9em 0 2.7em;
+	}
+
+	&__content {
+		@extend .container_center;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__action {
+		padding: 1em 0 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		@media (min-width: 768px) {
+			padding: 0;
+			// margin-top: 0;
+			margin-left: 5.4em;
+			flex-direction: row;
+			align-items: center;
+		}
+
+		.fl-button {
+			font-size: 0.78em;
+			font-weight: 600;
+			padding: 1.1em 2.3em;
+		}
+	}
+}
+
+// stiky menu
+.stiky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}

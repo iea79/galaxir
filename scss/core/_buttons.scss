@@ -1,0 +1,60 @@
+// Style for button and pseudo button for input and link
+
+.fl-builder-content a.fl-button,
+.fl-builder-content a.fl-button:visited,
+.fl-button {
+	color: $btn_default_text_color;
+	font-family: $main_font_family;
+	font-size: 1em;
+	font-weight: 800;
+	padding: 1.9em 2.6em;
+	letter-spacing: 0.075em;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	background-color: $btn_default_bg_color;
+	text-align: center;
+	max-width: 100%;
+	cursor: pointer;
+	border-radius: 5em;
+	transition: all 0.3s;
+	text-decoration: none;
+	border: 1px solid rgba(255, 255, 255, 0.11);
+	box-shadow: 0 0.4em 1.56em rgba(13, 44, 65, 0.2), inset 0 -0.95em 1.56em rgba(0, 0, 0, 0.31), inset 0 0.95em 3.25em rgba(255, 255, 255, 0.3), inset 0 0 0.95em rgba(255, 255, 255, 0.45);
+
+	&:hover {
+		background-color: darken($btn_default_bg_color, 7%);
+		color: $color_withe;
+		text-decoration: none;
+	}
+
+	&:active,
+	&:focus {
+		background-color: lighten($btn_default_bg_color, 7%);
+		color: $color_withe;
+	}
+	// @each $status_el, $color_bg in $el_colors {
+	// 	&_#{$status_el} {
+	// 		background-color: $color_bg;
+	// 		border-color: $color_bg;
+	// 		color: $btn_contrast_text_color;
+	//
+	// 		&:hover {
+	// 			background-color: darken($color_bg, 7%);
+	// 			color: $btn_contrast_text_color;
+	// 		}
+	//
+	// 		&:active,
+	// 		&:focus {
+	// 			background-color: darken($color_bg, 10%);
+	// 			color: $btn_contrast_text_color;
+	// 		}
+	// 	}
+	// }
+
+	* {
+		color: inherit;
+	}
+}

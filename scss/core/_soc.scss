@@ -1,0 +1,36 @@
+// Social link
+
+.soc {
+	// float: left;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	li {
+		margin: 0.5em;
+
+		a {
+			display: block;
+			text-decoration: none;
+			opacity: 0.5;
+			// width: 1.9em;
+			// height: 1.9em;
+
+			img._svg {
+				width: 1.9em !important;
+				height: auto;
+			}
+
+			&:after {
+				display: none;
+			}
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+
+}
